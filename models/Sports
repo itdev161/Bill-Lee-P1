@@ -1,0 +1,17 @@
+import mongoose from 'mongoose';
+
+const SportsSchema = new mongoose.Schema({
+ 
+  Strength Sports: {
+    type: String,
+    required: true,
+  },
+  Endurance Sports: {
+    type: String,
+    required: true
+  }
+});
+
+const User = mongoose.model('Sports', SportsSchema);
+
+export default Sports;
